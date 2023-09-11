@@ -4,9 +4,9 @@ import argparse
 import json
 import time
 
-def scrape(url, endpoint):
+def scrape(url, endpoint, driver_path):
     # Initialize Selenium WebDriver
-    service = Service('./chromedriver')
+    service = Service(driver_path)
     driver = webdriver.Chrome(service=service)
     
     # Load the page
@@ -34,10 +34,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scrape JSON data from a given URL and endpoint.")
     parser.add_argument("--url", help="URL to scrape from.", required=True)
     parser.add_argument("--endpoint", help="API endpoint to fetch JSON from.", required=True)
+    parser.add_argument("--driver-path", help="Path to the Chrome WebDriver.", default='./chromedriver')
     
     args = parser.parse_args()
     
-    scraped_json = scrape(args.url, args.endpoint)
+    scraped_json = scrape(args.url, args.endpoint, args.driver_path)
     
     # Output the scraped JSON
     print(scraped_json)
