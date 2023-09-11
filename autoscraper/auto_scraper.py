@@ -111,9 +111,11 @@ class AutoScraper(object):
         user_headers = request_args.pop("headers", {})
         headers.update(user_headers)
 
-        # Setup WebDriver
+        # Setup WebDriver in headless mode
         webdriver_service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=webdriver_service)
+        options = webdriver.ChromeOptions()
+        options.add_argument('--headless')
+        driver = webdriver.Chrome(service=webdriver_service, options=options)
 
         driver.get(url)
 
