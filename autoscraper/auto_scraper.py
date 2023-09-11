@@ -93,6 +93,13 @@ class AutoScraper(object):
 
         self.stack_list = data["stack_list"]
 
+    from selenium import webdriver
+    from selenium.webdriver.chrome.service import Service
+    from webdriver_manager.chrome import ChromeDriverManager
+    from selenium.webdriver.common.by import By
+    from selenium.webdriver.support.ui import WebDriverWait
+    from selenium.webdriver.support import expected_conditions as EC
+
     @classmethod
     def _fetch_html(cls, url, request_args=None):
         request_args = request_args or {}
@@ -102,12 +109,21 @@ class AutoScraper(object):
 
         user_headers = request_args.pop("headers", {})
         headers.update(user_headers)
-        res = requests.get(url, headers=headers, **request_args)
-        if res.encoding == "ISO-8859-1" and not "ISO-8859-1" in res.headers.get(
-            "Content-Type", ""
-        ):
-            res.encoding = res.apparent_encoding
-        html = res.text
+
+        # Setup WebDriver
+        webdriver_service = Service(ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=webdriver_service)
+
+        driver.get(url)
+
+        # Wait for JavaScript to finish executing
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.TAG_NAME, "body"))
+        )
+
+        html = driver.page_source
+        driver.quit()
+
         return html
 
     @classmethod
