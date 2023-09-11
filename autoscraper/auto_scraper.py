@@ -99,6 +99,38 @@ class AutoScraper(object):
 
         self.stack_list = data["stack_list"]
 
+    # Add this function
+    def get_response_json(self, url, request_args=None):
+        """
+        Sends a GET request to the specified URL and returns the response as a JSON object.
+
+        Parameters
+        ----------
+        url: str
+            URL of the endpoint to send the request to.
+
+        request_args: dict, optional
+            A dictionary used to specify a set of additional request parameters used by requests
+            module. You can specify proxy URLs, custom headers etc.
+
+        Returns
+        -------
+        dict
+            The response from the endpoint as a JSON object.
+        """
+
+        request_args = request_args or {}
+        headers = dict(self.request_headers)
+        if url:
+            headers["Host"] = urlparse(url).netloc
+
+        user_headers = request_args.pop("headers", {})
+        headers.update(user_headers)
+
+        response = requests.get(url, headers=headers, **request_args)
+        response.raise_for_status()
+        return response.json()
+
     # Remove these lines
 
     @classmethod
