@@ -1,0 +1,47 @@
+{
+    "site": "woolworths.com.au",
+    "startURL": "https://www.woolworths.com.au/shop/browse/specials/half-price",
+    "tasks": 
+        [
+            "loadPage",
+            "extractProducts",
+        ],
+    "loadPage": {
+        "name": "loadPage",
+        "url": "https://www.woolworths.com.au/shop/browse/specials/half-price",
+        "wait": 4000
+    },
+    "extractProducts": {
+        "name": "extractProducts",
+        "type": "grid",
+        "selector": "#search-content > div > shared-grid > div > div:nth-child({?})",
+        "fields": {
+            "name": {
+                "selector": "#search-content > div > shared-grid > div > div:nth-child(1) > shared-product-tile > shared-product-tile-v2 > section > div.product-title-container > shared-product-tile-title > div > a",
+                "type": "text"
+            },
+            "price": {
+                "selector": "#search-content > div > shared-grid > div > div:nth-child(1) > shared-product-tile > shared-product-tile-v2 > section > div.product-information-container > div > shared-product-tile-price > div > div.primary",
+                "type": "text"
+            },
+            "wasPrice":{
+                "selector": "#search-content > div > shared-grid > div > div:nth-child(1) > shared-product-tile > shared-product-tile-v2 > section > div.product-information-container > div > shared-product-tile-price > div > div.secondary > span.was-price.ng-star-inserted",
+                "type": "text"
+            },
+            "unitPrice": {
+                "selector": "#search-content > div > shared-grid > div > div:nth-child(1) > shared-product-tile > shared-product-tile-v2 > section > div.product-information-container > div > shared-product-tile-price > div > div.secondary > span.price-per-cup",
+                "type": "text"
+            },
+            "link": {
+                "selector": "#search-content > div > shared-grid > div > div:nth-child(1) > shared-product-tile > shared-product-tile-v2 > section > div.product-title-container > shared-product-tile-title > div > a",
+                "type": "attribute",
+                "attribute": "href"
+            },
+            "image": {
+                "selector": "a.product-image img",
+                "type": "attribute",
+                "attribute": "src"
+            }
+        }
+    }
+}

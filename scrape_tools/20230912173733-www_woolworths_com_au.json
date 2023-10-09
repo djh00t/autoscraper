@@ -1,0 +1,43 @@
+{
+    "response": {
+        "headers": {
+            "Content-Type": "text/html; charset=utf-8",
+            "ETag": "W/\"e47d1-wrsARKVJRHCwjTfREsHs0tcIN4M:dtagent10273230728040645HUB7\"",
+            "Request-Context": "appId=cid-v1:6e80a3cd-b964-4d8a-a650-bc43e6bc1b8a",
+            "X-Powered-By": "Express",
+            "ssr": "true",
+            "Link": "<https://cdn0.woolworths.media>;rel=\"preconnect\"",
+            "X-OneAgent-JS-Injection": "true",
+            "X-ruxit-JS-Agent": "true",
+            "X-Akamai-Transformed": "9 937640 0 pmb=mTOE,5mRUM,2",
+            "Vary": "Accept-Encoding",
+            "Content-Encoding": "gzip",
+            "Date": "Tue, 12 Sep 2023 07:37:34 GMT",
+            "Transfer-Encoding": "chunked",
+            "Connection": "keep-alive, Transfer-Encoding",
+            "Set-Cookie": "AKA_A2=A; expires=Tue, 12-Sep-2023 08:37:34 GMT; path=/; domain=woolworths.com.au; secure; HttpOnly, bff_region=syd1; path=/; secure; HttpOnly; SameSite=None, akaalb_woolworths.com.au=~op=www_woolworths_com_au_BFF_SYD_Launch:WOW-BFF-SYD|~rv=56~m=WOW-BFF-SYD:0|~os=43eb3391333cc20efbd7f812851447e6~id=5cac57551087fa5e7a93641f402bbc64; path=/; HttpOnly; Secure; SameSite=None, _abck=80B65E20F3174B1588B58565B1574313~-1~YAAQuQUgF9MwtH2KAQAAgvpSiArbE2XI/d3JvzbvvXgwpZ+caXesvOJyktzKhYY/rED5hvPJkd2q7SpzWPVrLFLMP4faqB2258nXOkXosbunG0nwH4T1FTXOkE18nau79uVcRLQYWcoFCRqMLQOfEKXkWjQG9y8FaQCfHEZooYnjKd5NU+wuxn6SobDTymXkuF7UubQC0qsU2/ESNR3NUje0bp2WJj0g8xXVo4icGYvkzi5XMgl0gaNt/Kx8XCVKEo+SryEBYNkg19PrplOYq1ZaUmXFLnfEKCNdq5mw2ZmSmcDxNLPd7J9//9VEX5Qq+S471B8LPHSUpuEKsMdYEOCPsu/IYPxQa4Au9LzCEkz9J56SF5qTDMcYy3emhbFSNLgN~-1~-1~-1; Domain=.woolworths.com.au; Path=/; Expires=Wed, 11 Sep 2024 07:37:34 GMT; Max-Age=31536000; Secure, ak_bmsc=503502DDB745C1A6E3901E4EDCFFA7A6~000000000000000000000000000000~YAAQuQUgF9QwtH2KAQAAgvpSiBXP4L/l265sIrEL8M7TRI8PHKzdSuwpMqt4/7+tnmRB/DaxwNpdZt1/xzc5qEFoXjPXXuKSHKYKNopspKos/sC2LOeoisE1/feFrvC/rLIA7El8g+9HL2iSG0UKurDvuDJ2Q6OaarQrPl7lDCrOGjaF4bNTYmxQqqRDa1mcFYGKE5KT2s3RsCa5u0sYRWEAlgHlEp5npQrk/82UhMz9kDrdDztZELxKLkFtk5s1kj0c7vzIje1tx4Vvvs5AG9pu2vmtfVP14AB6lHqgHm3gzRlloIHI3nvNpmn8lou4r59r1F98lYGo6xPc4RZmUeJe7RwuGhSa4VwVJuB+x+D1dgioF6NsL30ncU4S0kB6kuQ=; Domain=.woolworths.com.au; Path=/; Expires=Tue, 12 Sep 2023 09:37:33 GMT; Max-Age=7199; HttpOnly, bm_mi=1C106E264816CEE655EB00FA7FEFBDA5~YAAQuQUgF9UwtH2KAQAAgvpSiBXCLcd1PxiHcF1lHPMc2v9clVDZav+FeDeV5+oR+xtokcLH5Q95TSbEcW7mZIqzGzgVcead9wbbDCeNisI6j4aQ/eByJ10vkLcIdIfSDeTRcT84+UP7izprAebbio9b8XpwbnlNucBgQcuawI96GYINvUztqwvDHZAL2fKfAbu5sfteKVqfjtRlgDU1GMx7ErPRH4AGvnPwsZ0JSi37pg9Ekd3AgSUpLUsXU1/CoKZGk/pzuMyP9IoIuYMsmbswxUzvdXTedfvN1uxpjfdw9rMjlUrPTIHHfcXJPVeE+H2rXsBQytbGSUU3Ekra0jThle78SY6tFpI80Ir1msiYnxwg~1; Domain=.woolworths.com.au; Path=/; Expires=Tue, 12 Sep 2023 07:37:34 GMT; Max-Age=0; Secure, bm_sz=309B69296ACEA35CC36DE24DFABA7EB7~YAAQuQUgF9YwtH2KAQAAgvpSiBW42jIf5J9ejF/NXL4xZui/KYliQkujHUyTJUwBd0cvbJijcY3Snp0oAbGSEZMxEEaQUGJUenXCL6LZUuglLnIxgNmgwi6WpoWeMwndEWGCSzJes0OLAWRz15+4aGU6tOV9SLl0gNo0qa936PZFMwxSQz5M9tK0HPcsS9P4B95uhzzfhzOarYYr7kB483OX85ba5Fk3QdutiNdRbLLFJ6dylGgRL+jaRzSZlzzucDxrD1+mxFkbvFDS3Glbp9fGNmkO3lxYj1VGSsTQVoEwsNy2IqTKcCzN~3486257~3683636; Domain=.woolworths.com.au; Path=/; Expires=Tue, 12 Sep 2023 11:37:33 GMT; Max-Age=14399",
+            "Server-Timing": "cdn-cache; desc=HIT, edge; dur=15, origin; dur=0, dtSInfo;desc=\"1\", ak_p; desc=\"1694504253863_387974585_132734124_1518_74568_26_16_-\";dur=1",
+            "X-Content-Type-Options": "nosniff",
+            "X-XSS-Protection": "1; mode=block",
+            "Strict-Transport-Security": "max-age=31536000 ; includeSubDomains"
+        },
+        "cookies": {
+            "AKA_A2": "A",
+            "_abck": "80B65E20F3174B1588B58565B1574313~-1~YAAQuQUgF9MwtH2KAQAAgvpSiArbE2XI/d3JvzbvvXgwpZ+caXesvOJyktzKhYY/rED5hvPJkd2q7SpzWPVrLFLMP4faqB2258nXOkXosbunG0nwH4T1FTXOkE18nau79uVcRLQYWcoFCRqMLQOfEKXkWjQG9y8FaQCfHEZooYnjKd5NU+wuxn6SobDTymXkuF7UubQC0qsU2/ESNR3NUje0bp2WJj0g8xXVo4icGYvkzi5XMgl0gaNt/Kx8XCVKEo+SryEBYNkg19PrplOYq1ZaUmXFLnfEKCNdq5mw2ZmSmcDxNLPd7J9//9VEX5Qq+S471B8LPHSUpuEKsMdYEOCPsu/IYPxQa4Au9LzCEkz9J56SF5qTDMcYy3emhbFSNLgN~-1~-1~-1",
+            "ak_bmsc": "503502DDB745C1A6E3901E4EDCFFA7A6~000000000000000000000000000000~YAAQuQUgF9QwtH2KAQAAgvpSiBXP4L/l265sIrEL8M7TRI8PHKzdSuwpMqt4/7+tnmRB/DaxwNpdZt1/xzc5qEFoXjPXXuKSHKYKNopspKos/sC2LOeoisE1/feFrvC/rLIA7El8g+9HL2iSG0UKurDvuDJ2Q6OaarQrPl7lDCrOGjaF4bNTYmxQqqRDa1mcFYGKE5KT2s3RsCa5u0sYRWEAlgHlEp5npQrk/82UhMz9kDrdDztZELxKLkFtk5s1kj0c7vzIje1tx4Vvvs5AG9pu2vmtfVP14AB6lHqgHm3gzRlloIHI3nvNpmn8lou4r59r1F98lYGo6xPc4RZmUeJe7RwuGhSa4VwVJuB+x+D1dgioF6NsL30ncU4S0kB6kuQ=",
+            "bm_sz": "309B69296ACEA35CC36DE24DFABA7EB7~YAAQuQUgF9YwtH2KAQAAgvpSiBW42jIf5J9ejF/NXL4xZui/KYliQkujHUyTJUwBd0cvbJijcY3Snp0oAbGSEZMxEEaQUGJUenXCL6LZUuglLnIxgNmgwi6WpoWeMwndEWGCSzJes0OLAWRz15+4aGU6tOV9SLl0gNo0qa936PZFMwxSQz5M9tK0HPcsS9P4B95uhzzfhzOarYYr7kB483OX85ba5Fk3QdutiNdRbLLFJ6dylGgRL+jaRzSZlzzucDxrD1+mxFkbvFDS3Glbp9fGNmkO3lxYj1VGSsTQVoEwsNy2IqTKcCzN~3486257~3683636",
+            "bff_region": "syd1",
+            "akaalb_woolworths.com.au": "~op=www_woolworths_com_au_BFF_SYD_Launch:WOW-BFF-SYD|~rv=56~m=WOW-BFF-SYD:0|~os=43eb3391333cc20efbd7f812851447e6~id=5cac57551087fa5e7a93641f402bbc64"
+        }
+    },
+    "request": {
+        "headers": {
+            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.5112.79 Safari/537.36",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+            "Connection": "keep-alive",
+            "Accept-Language": "en-US,en;q=0.5",
+            "Cache-Control": "max-age=0"
+        }
+    }
+}
